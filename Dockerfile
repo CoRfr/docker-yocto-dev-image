@@ -3,7 +3,8 @@ FROM ubuntu:14.04
 RUN ( \ 
     apt-get update && \
     apt-get --yes --assume-yes install -y \
-        build-essential python git libsdl-dev \ 
+        build-essential python python-jinja2 \
+        git subversion libsdl-dev \ 
         diffstat texinfo gawk chrpath wget cpio \
         vim zsh icecc bash && \
     apt-get clean && \
