@@ -8,6 +8,6 @@ RUN ( \
         vim zsh icecc bash && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    ln -sf /bin/bash /bin/sh 
+    ln -sf /bin/bash /bin/sh \ 
     )
 
