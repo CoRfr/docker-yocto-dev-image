@@ -1,5 +1,8 @@
 FROM debian:stable
 
+## Mirror
+RUN sed -i "s^http://httpredir.debian.org/debian^http://mirror.it.ubc.ca/debian^g" /etc/apt/sources.list
+
 RUN ( \
         apt-get update && \
         apt-get --yes --assume-yes install -y \
