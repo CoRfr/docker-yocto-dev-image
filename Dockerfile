@@ -10,7 +10,7 @@ RUN ( \
             git subversion libsdl-dev \ 
             diffstat texinfo gawk chrpath wget cpio \
             vim zsh icecc bash ninja-build screen sshpass \
-            bc python-git unzip && \
+            bc python-git unzip libxml2-utils && \
         apt-get clean && \
         rm -rf /var/lib/apt/lists/* && \
         ln -sf /bin/bash /bin/sh \
